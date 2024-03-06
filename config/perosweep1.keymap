@@ -41,7 +41,26 @@
         };
     };
 
-    combos {
+       macros {
+            zed_em_kay: zed_em_kay {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LSHFT>
+                    , <&macro_tap &kp Z &kp M &kp K>
+                    , <&macro_release &kp LSHFT>
+                    ;
+            };
+            cpp_ptr: cpp_ptr {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_tap &kp MINUS &kp GREATER_THAN>
+                    ;
+            };
+        };    
+
+        combos {
         compatible = "zmk,combos";
         combo_bspc {
         timeout-ms = <50>;
@@ -50,12 +69,12 @@
         };
         combo_tab {
         timeout-ms = <50>;
-        key-positions = <0 0>;
+        key-positions = <0 1>;
         bindings = <&kp TAB>;
         };
         combo_mins {
         timeout-ms = <50>;
-        key-positions = <23 24>;
+        key-positions = <22 23>;
         bindings = <&kp MINUS>;
         };
         combo_eql {
@@ -65,7 +84,7 @@
         };
         combo_dquo {
         timeout-ms = <50>;
-        key-positions = <8 9>;
+        key-positions = <7 8>;
         bindings = <&kp DOUBLE_QUOTES>;
         };
     };
@@ -87,7 +106,7 @@
         macsym {
         bindings = <
 
-        &kp EXCL     &kp AT     &kp LBRC   &kp RBRC  &kp TILDE    &none     &kp CARET &kp MINUS  &kp SQT  &kp LG(GRAVE)
+        &kp EXCL     &kp AT     &kp LBRC   &kp RBRC  &kp TILDE    &cpp_ptr  &kp CARET &kp MINUS  &kp SQT  &kp LG(GRAVE)
         &kp LA(N3)   &kp DLLR   &kp LPAR   &kp RPAR  &kp PIPE     &kp LGUI  &kp EQUAL &kp UNDER  &kp DQT  &kp INS
         &kp PRCNT    &kp HASH   &kp LBKT   &kp RBKT  &kp AMPS     &kp GRAVE &kp BSLH  &kp HOME   &kp END  &none
 
