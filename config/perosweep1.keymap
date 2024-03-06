@@ -47,7 +47,7 @@
         macos {
         bindings = <
 
-        &kp Q         &kp W       &kp E         &lt 3 R      &lt 4 T    &kp Y      &kp U        &kp I         &kp O        &kp P
+        &kp Q         &kp W       &kp E         &lt 3 R      &kp T      &kp Y      &kp U        &kp I         &kp O        &kp P
         &kp A         &lm LALT S  &lm LCTRL D   &lm LSHIFT F &lm LGUI G &rm RGUI H &rm RSHIFT J &rm RCTRL K   &rm RALT L   &kp SEMICOLON  
         &kp Z         &lm RALT X  &kp C         &kp V        &kp B      &kp N      &lt 3 M      &kp COMMA     &rm RALT DOT &kp SLASH        
 
@@ -63,7 +63,7 @@
         &kp LALT 3   &kp DLLR   &kp LPAR   &kp RPAR  &kp PIPE     &kp LGUI  &kp EQUAL &kp UNDER  &kp DQT  &kp INS
         &kp PRCNT    &kp HASH   &kp LBKT   &kp RBKT  &kp AMPS     &kp GRAVE &kp BSLH  &kp HOME   &kp END  &none
 
-                                            &none  &kp LBKT   &kp RBKT  &kp LG(GRAVE)
+                                            &none    &kp LBKT     &kp RBKT  &kp LG(GRAVE)
         >;
         };
 
