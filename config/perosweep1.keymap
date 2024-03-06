@@ -45,9 +45,28 @@
         compatible = "zmk,combos";
         combo_bspc {
         timeout-ms = <50>;
-        key-positions = <>;
+        key-positions = <8 9>;
         bindings = <&kp BACKSPACE>;
-            
+        };
+        combo_tab {
+        timeout-ms = <50>;
+        key-positions = <0 0>;
+        bindings = <&kp TAB>;
+        };
+        combo_mins {
+        timeout-ms = <50>;
+        key-positions = <23 24>;
+        bindings = <&kp MINUS>;
+        };
+        combo_eql {
+        timeout-ms = <50>;
+        key-positions = <1 2>;
+        bindings = <&kp EQUAL>;
+        };
+        combo_dquo {
+        timeout-ms = <50>;
+        key-positions = <8 9>;
+        bindings = <&kp DOUBLE_QUOTES>;
         };
     };
 
