@@ -56,7 +56,7 @@
         };
 
         // TODO: We have to wait for `&sl` to time out for `&caps_word` to work.
-        num_and_signs {
+        macsym {
         bindings = <
 
         &kp EXCL  &kp AT     &kp LBKT   &kp RBKT  &kp TILDE    &none     &kp CARET &kp MINUS  &kp SQT  &kp LG(GRAVE)
@@ -67,49 +67,41 @@
         >;
         };
 
-        macsym {
-        bindings = <
-
-        &kp ESC   &kp PRCNT  &kp HASH   &kp LT     &kp GT       &none      &none         &kp PG_DN  &kp PG_UP  &kp DEL
-        &kp EXCL  &kp SLASH  &kp ASTRK  &kp DLLR   &kp CARET    &none      &kp LARW      &kp DARW   &kp UARW   &kp RARW  
-        &none     &kp BSLH   &kp TILDE  &kp GRAVE  &kp QMARK    &none      &kp LA(LARW)  &none      &none      &kp LA(RARW)    
-
-                                              &sl NUM  &none    &none      &sl FKEYS
-        >;
-        };
-
-        // The switch to the SYSTEM layer is put on the second thumb key on purpose
-        // to prevent accidental system layer activations.
+        // TODO: We have to wait for `&sl` to time out for `&caps_word` to work.
         fkeys {
         bindings = <
 
-        &kp C_NEXT    &kp C_PREV    &kp C_PLAY_PAUSE  &none  &none      &kp F12  &kp F7  &kp F8  &kp F5  &none  
-        &kp C_VOL_UP  &kp C_VOL_DN  &kp K_MUTE        &none  &none      &kp F11  &kp F4  &kp F5  &kp F4  &none  
-        &none         &none         &none             &none  &none      &kp F10  &kp F1  &kp F2  &kp F3  &none  
+        &kp EXCL  &kp AT     &kp LBKT   &kp RBKT  &kp TILDE    &none     &kp CARET &kp MINUS  &kp SQT  &kp LG(GRAVE)
+        &kp LA(3) &kp DLLR   &kp LPAR   &kp RPAR  &kp PIPE     &kp LGUI  &kp EQUAL &kp UNDER  &kp DQT  &kp INS
+        &kp PRCNT &kp HASH   &kp LBRC   &kp RBRC  &kp AMPS     &kp GRAVE &kp BSLH  &kp HOME   &kp END  &none
 
-                                                 &none  &sl SYSTEM      &none  &none
+                                            &none  &kp LBKT   &kp RBKT  &kp LG(GRAVE)
         >;
         };
 
-        arrow {
+        // TODO: We have to wait for `&sl` to time out for `&caps_word` to work.
+        arrows {
         bindings = <
 
-        &sys_reset   &none  &none  &none      &bt BT_SEL 0    &none  &none  &none  &none  &sys_reset
-        &bootloader  &none  &none  &none      &bt BT_SEL 1    &none  &none  &none  &none  &bootloader
-        &none        &none  &none  &bt BT_CLR &bt BT_SEL 2    &none  &none  &none  &none  &none
+        &kp EXCL  &kp AT     &kp LBKT   &kp RBKT  &kp TILDE    &none     &kp CARET &kp MINUS  &kp SQT  &kp LG(GRAVE)
+        &kp LA(3) &kp DLLR   &kp LPAR   &kp RPAR  &kp PIPE     &kp LGUI  &kp EQUAL &kp UNDER  &kp DQT  &kp INS
+        &kp PRCNT &kp HASH   &kp LBRC   &kp RBRC  &kp AMPS     &kp GRAVE &kp BSLH  &kp HOME   &kp END  &none
 
-                                              &none  &none    &none  &none
+                                            &none  &kp LBKT   &kp RBKT  &kp LG(GRAVE)
         >;
         };
-        misc {
+
+        // TODO: We have to wait for `&sl` to time out for `&caps_word` to work.
+        system {
         bindings = <
 
-        &sys_reset   &none  &none  &none      &bt BT_SEL 0    &none  &none  &none  &none  &sys_reset
-        &bootloader  &none  &none  &none      &bt BT_SEL 1    &none  &none  &none  &none  &bootloader
-        &none        &none  &none  &bt BT_CLR &bt BT_SEL 2    &none  &none  &none  &none  &none
+        &kp EXCL  &kp AT     &kp LBKT   &kp RBKT  &kp TILDE    &none     &kp CARET &kp MINUS  &kp SQT  &kp LG(GRAVE)
+        &kp LA(3) &kp DLLR   &kp LPAR   &kp RPAR  &kp PIPE     &kp LGUI  &kp EQUAL &kp UNDER  &kp DQT  &kp INS
+        &kp PRCNT &kp HASH   &kp LBRC   &kp RBRC  &kp AMPS     &kp GRAVE &kp BSLH  &kp HOME   &kp END  &none
 
-                                              &none  &none    &none  &none
+                                            &none  &kp LBKT   &kp RBKT  &kp LG(GRAVE)
         >;
         };
+
     };
 };
