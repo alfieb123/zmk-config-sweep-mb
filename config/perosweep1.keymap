@@ -189,7 +189,7 @@
         fkeys {
         bindings = <
 
-        &kp F12 &kp F11      &kp F10       &kp F12        &none      &kp EQUAL    &kp N7        &kp N8       &kp N9      &kp STAR
+        &kp F12 &kp F11      &kp F10       &kp F9         &none      &kp EQUAL    &kp N7        &kp N8       &kp N9      &kp STAR
         &kp F8  &lm LALT F7  &lm LCTRL F6  &lm LSHIFT F5  &kp LGUI   &rm LGUI DOT &rm RSHIFT N4 &rm RCTRL N5 &rm RALT N6 &kp PLUS
         &kp F4  &kp F3       &kp F2        &kp F1         &none      &kp N0       &kp N1        &kp N2       &kp N3      &kp MINUS
 
