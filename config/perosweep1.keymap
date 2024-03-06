@@ -60,7 +60,7 @@
         bindings = <
 
         &kp EXCL     &kp AT     &kp LBRC   &kp RBRC  &kp TILDE    &none     &kp CARET &kp MINUS  &kp SQT  &kp LG(GRAVE)
-        &kp LALT 3   &kp DLLR   &kp LPAR   &kp RPAR  &kp PIPE     &kp LGUI  &kp EQUAL &kp UNDER  &kp DQT  &kp INS
+        &kp LA(3)    &kp DLLR   &kp LPAR   &kp RPAR  &kp PIPE     &kp LGUI  &kp EQUAL &kp UNDER  &kp DQT  &kp INS
         &kp PRCNT    &kp HASH   &kp LBKT   &kp RBKT  &kp AMPS     &kp GRAVE &kp BSLH  &kp HOME   &kp END  &none
 
                                             &none    &kp LBKT     &kp RBKT  &kp LG(GRAVE)
