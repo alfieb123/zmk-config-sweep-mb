@@ -58,6 +58,78 @@
                     = <&macro_tap &kp MINUS &kp GREATER_THAN>
                     ;
             };
+            LBR_D: LBR_D {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LEFT_BRACKET>
+                    , <&macro_tap &kp D>
+                    , <&macro_release &kp LEFT_BRACKET>
+                    ;
+            };
+            LBR_F: LBR_F {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LEFT_BRACKET>
+                    , <&macro_tap &kp F>
+                    , <&macro_release &kp LEFT_BRACKET>
+                    ;
+            };
+            LBR_T: LBR_T {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LEFT_BRACKET>
+                    , <&macro_tap &kp T>
+                    , <&macro_release &kp LEFT_BRACKET>
+                    ;
+            };
+            LBR_P: LBR_P {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LEFT_BRACKET>
+                    , <&macro_tap &kp P>
+                    , <&macro_release &kp LEFT_BRACKET>
+                    ;
+            };
+            RBR_D: RBR_D {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp RIGHT_BRACKET>
+                    , <&macro_tap &kp D>
+                    , <&macro_release &kp RIGHT_BRACKET>
+                    ;
+            };
+            RBR_F: RBR_F {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp RIGHT_BRACKET>
+                    , <&macro_tap &kp F>
+                    , <&macro_release &kp RIGHT_BRACKET>
+                    ;
+            };
+            RBR_T: RBR_T {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp RIGHT_BRACKET>
+                    , <&macro_tap &kp T>
+                    , <&macro_release &kp RIGHT_BRACKET>
+                    ;
+            };
+            RBR_P: RBR_P {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp RIGHT_BRACKET>
+                    , <&macro_tap &kp P>
+                    , <&macro_release &kp RIGHT_BRACKET>
+                    ;
+            };
         };    
 
         combos {
@@ -128,11 +200,11 @@
         arrows {
         bindings = <
 
-        &none     &none     &none     &none     &none     &none     &none     &none     &none     &none
-        &none     &none     &none     &none     &none     &none     &none     &none     &none     &none     
+        &none     &LBR_T    &LBR_D    &LBR_P    &LBR_F    &none     &none     &none     &none     &none
+        &none     &RBR_T    &RBR_D    &RBR_P    &RBR_F    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none     
         &none     &none     &none     &none     &none     &none     &none     &none     &none     &none
 
-                                      &none     &none     &none     &none  
+                                      &kp UP    &kp DOWN  &none     &none  
         >;
         };
 
