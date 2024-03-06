@@ -71,7 +71,7 @@
         fkeys {
         bindings = <
 
-        &kp F12 &kp F11      &kp F10       &kp F12        &none      &KP EQUAL    &kp N7        &kp N8       &kp N9      &kp STAR
+        &kp F12 &kp F11      &kp F10       &kp F12        &none      &kp EQUAL    &kp N7        &kp N8       &kp N9      &kp STAR
         &kp F8  &lm LALT F7  &lm LCTRL F6  &lm LSHIFT F5  &kp LGUI   &rm LGUI DOT &rm RSHIFT N4 &rm RCTRL N5 &rm RALT N6 &kp PLUS
         &kp F4  &kp F3       &kp F2        &kp F1         &none      &kp N0       &kp N1        &kp N2       &kp N3      &kp MINUS
 
@@ -79,7 +79,6 @@
         >;
         };
 
-        // TODO: We have to wait for `&sl` to time out for `&caps_word` to work.
         arrows {
         bindings = <
 
@@ -91,17 +90,18 @@
         >;
         };
 
-        // TODO: We have to wait for `&sl` to time out for `&caps_word` to work.
-        system {
-        bindings = <
+        // // KEEP THIS! its the blank one we can copy
+        // blank {
+        // bindings = <
 
-        &kp EXCL  &kp AT     &kp LBKT   &kp RBKT  &kp TILDE    &none     &kp CARET &kp MINUS  &kp SQT  &kp LG(GRAVE)
-        &kp LA(3) &kp DLLR   &kp LPAR   &kp RPAR  &kp PIPE     &kp LGUI  &kp EQUAL &kp UNDER  &kp DQT  &kp INS
-        &kp PRCNT &kp HASH   &kp LBRC   &kp RBRC  &kp AMPS     &kp GRAVE &kp BSLH  &kp HOME   &kp END  &none
+        // &none     &none     &none     &none     &none     &none     &none     &none     &none     &none
+        // &none     &none     &none     &none     &none     &none     &none     &none     &none     &none     
+        // &none     &none     &none     &none     &none     &none     &none     &none     &none     &none
 
-                                            &none  &kp LBKT   &kp RBKT  &kp LG(GRAVE)
-        >;
-        };
+        //                               &none     &none     &none     &none  
+        // >;
+        // };
+
 
     };
 };
