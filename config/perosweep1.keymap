@@ -23,8 +23,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "home_row_left";
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            quick_tap_ms = <175>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <160>;
+            // tapping-term-ms = <280>;
+            // quick_tap_ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
@@ -35,8 +37,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "home_row_right";
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            quick_tap_ms = <175>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <160>;
+            // tapping-term-ms = <280>;
+            // quick_tap_ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
