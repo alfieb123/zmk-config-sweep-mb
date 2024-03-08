@@ -216,7 +216,7 @@
         >;
         };
 
-        bootloader & bt access {
+        bootloader_bt_access {
         bindings = <
 
         &mo 5       &none     &none     &none     &none     &none         &bt BT_SEL 7  &bt BT_SEL 8  &bt BT_SEL 9  &none
