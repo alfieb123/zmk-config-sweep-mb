@@ -178,7 +178,7 @@
 
         &kp Q         &kp W       &kp E         &lt 3 R      &lt 4 T    &lt 4 Y    &kp U        &kp I         &kp O        &kp P
         &kp A         &lm LALT S  &lm LCTRL D   &lm LSHIFT F &lm LGUI G &rm RGUI H &rm RSHIFT J &rm RCTRL K   &rm RALT L   &kp SEMICOLON  
-        &kp Z         &lm RALT X  &kp C         &kp V        &kp B      &kp N      &lt 3 M      &kp COMMA     &rm RALT DOT &kp SLASH        
+        &kp Z         &lm RALT X  &kp C         &lt 6 V      &kp B      &kp N      &lt 3 M      &kp COMMA     &rm RALT DOT &kp SLASH        
 
                                           &lt 1 ENTER     &lt 2 ESC   &lt 2 SPACE  &lt 1 UNDER
         >;
@@ -238,6 +238,16 @@
                                       &none     &none     &none     &none  
         >;
         };
+
+        macos_navigation {
+        bindings = <
+
+        &none     &none     &none     &none     &none     &none     &none          &none          &none          &none
+        &none     &none     &none     &none     &none     &none     &kp LC(N4)     &none          &none          &none     
+        &none     &none     &none     &none     &none     &none     &kp LC(N1)     &kp LC(N2)     &kp LC(N3)     &none
+
+                                      &none     &none     &none     &none  
+        >;
 
         // // KEEP THIS! its the blank one we can copy
         // blank {
