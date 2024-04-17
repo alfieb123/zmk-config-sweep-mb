@@ -62,6 +62,8 @@
             };
             gxp_str: gxp_str {
                 compatible = "zmk,behavior-macro";
+                wait-ms = <0>;
+                tap-ms = <0>;
                 #binding-cells = <0>;
                 bindings
                     = <&macro_tap &kp SPACE &kp C &kp E &kp R &kp SLASH &kp LS(U) &kp S &kp E &kp R &kp S &kp SLASH &kp A &kp L &kp F &kp I &kp E &kp SLASH &kp LS(D) &kp O &kp C &kp U &kp M &kp E &kp N &kp T &kp S &kp SLASH &kp UNDER &kp LS(R) &kp LS(E) &kp LS(P) &kp LS(O) &kp LS(S) &kp LS(I) &kp LS(T) &kp LS(O) &kp LS(R) &kp LS(I) &kp LS(E) &kp LS(S) &kp UNDER &kp SLASH &kp C &kp O &kp D &kp E &kp UNDER &kp G &kp E &kp N &kp UNDER &kp S &kp C &kp R &kp I &kp P &kp T &kp S &kp SLASH &kp G &kp O &kp D &kp O &kp T &kp UNDER &kp C &kp P &kp P &kp UNDER &kp H &kp E &kp A &kp D &kp E &kp R &kp UNDER &kp E &kp X &kp P &kp O &kp R &kp T &kp UNDER &kp P &kp R &kp O &kp C &kp E &kp S &kp S &kp O &kp R &kp SLASH &kp G &kp E &kp X &kp P &kp O &kp R &kp T>
