@@ -42,7 +42,7 @@
             hold-trigger-on-release;
         };
     };
-cer/Users/alfie/Documents/_REPOSIIIIIIIIIIIIIIIIIIIII
+
        macros {
             zed_em_kay: zed_em_kay {
                 compatible = "zmk,behavior-macro";
