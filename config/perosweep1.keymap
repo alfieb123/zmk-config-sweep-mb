@@ -60,7 +60,7 @@
                     = <&macro_tap &kp MINUS &kp GREATER_THAN>
                     ;
             };
-            gxp_ptr: gxp_ptr {
+            gxp_str: gxp_str {
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
                 bindings
