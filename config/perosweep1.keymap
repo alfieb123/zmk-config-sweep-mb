@@ -201,10 +201,10 @@
             >;
         };
 
-        macsym {
+        macsym { // note, for # we need to use right alt so we can use the same in linux
             bindings = <
                 &kp EXCL       &kp AT        &kp LBRC       &kp RBRC          &kp TILDE     &cpp_ptr     &kp CARET    &kp MINUS   &kp SQT      &kp LG(GRAVE)
-                &kp LA(N3)     &kp DLLR      &kp LPAR       &kp RPAR          &kp PIPE      &kp LGUI     &kp EQUAL    &kp UNDER   &kp DQT      &kp INS
+                &kp RA(N3)     &kp DLLR      &kp LPAR       &kp RPAR          &kp PIPE      &kp LGUI     &kp EQUAL    &kp UNDER   &kp DQT      &kp INS
                 &kp PRCNT      &kp HASH      &kp LBKT       &kp RBKT          &kp AMPS      &kp GRAVE    &kp BSLH     &kp HOME    &kp END      &none
                                                                   &none         &kp LBKT     &kp RBKT     &kp LG(GRAVE)
             >;
