@@ -186,6 +186,8 @@
     #define BOOTLOADER_BT_ACCESS 4
     #define BLUETOOTH            5
     #define MACOS_NAVIGATION     6
+    #define LINUX_BASE           7
+    #define LINUX_SYMBOLS        8
 
     keymap {
         compatible = "zmk,keymap";
@@ -252,7 +254,24 @@
                                                             &none             &none         &none        &none
             >;
         };
-    };
+
+        linux_base {
+            bindings = <
+                &kp Q          &kp W         &kp E          &lt ARROWS R              &lt BOOTLOADER_BT_ACCESS T  &lt BOOTLOADER_BT_ACCESS Y  &kp U           &kp I         &kp O          &kp P
+                &kp A          &lm LALT S    &lm LCTRL D    &lm LSHIFT F              &lm LGUI G                  &rm RGUI H                  &rm RSHIFT J    &rm RCTRL K   &rm RALT L     &kp SEMICOLON
+                &kp Z          &lm RALT X    &kp C          &kp V                     &kp B                       &kp N                       &lt ARROWS M    &kp COMMA     &rm RALT DOT   &kp SLASH
+                                                            &lt LINUX_SYMBOLS ENTER   &lt NUM_AND_FKEYS ESC       &lt NUM_AND_FKEYS SPACE     &lt LINUX_SYMBOLS UNDER
+            >;
+        };
+
+        linux_symbols {
+            bindings = <
+                &kp EXCL       &kp AT        &kp LBRC       &kp RBRC          &kp TILDE     &cpp_ptr     &kp CARET    &kp MINUS   &kp SQT      &kp LG(GRAVE)
+                &kp LA(N3)     &kp DLLR      &kp LPAR       &kp RPAR          &kp PIPE      &kp LGUI     &kp EQUAL    &kp UNDER   &kp DQT      &kp INS
+                &kp PRCNT      &kp HASH      &kp LBKT       &kp RBKT          &kp AMPS      &kp GRAVE    &kp BSLH     &kp HOME    &kp END      &none
+                                                                  &none         &kp LBKT     &kp RBKT     &kp LG(GRAVE)
+            >;
+        };
 
         // // KEEP THIS! its the blank one we can copy
         // blank {
