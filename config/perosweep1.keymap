@@ -179,85 +179,80 @@
         };
     };
 
+    #define MACOS_BASE           0
+    #define MACOS_SYMBOLS        1
+    #define NUM_AND_FKEYS        2
+    #define ARROWS               3
+    #define BOOTLOADER_BT_ACCESS 4
+    #define BLUETOOTH            5
+    #define MACOS_NAVIGATION     6
+
     keymap {
         compatible = "zmk,keymap";
-        
+
         macos {
-        bindings = <
-
-        &kp Q         &kp W       &kp E         &lt 3 R      &lt 4 T    &lt 4 Y    &kp U        &kp I         &kp O        &kp P
-        &kp A         &lm LALT S  &lm LCTRL D   &lm LSHIFT F &lm LGUI G &rm RGUI H &rm RSHIFT J &rm RCTRL K   &rm RALT L   &kp SEMICOLON  
-        &kp Z         &lm RALT X  &kp C         &lt 6 V      &kp B      &kp N      &lt 3 M      &kp COMMA     &rm RALT DOT &kp SLASH        
-
-                                          &lt 1 ENTER     &lt 2 ESC   &lt 2 SPACE  &lt 1 UNDER
-        >;
+            bindings = <
+                &kp Q          &kp W         &kp E          &lt ARROWS R              &lt BOOTLOADER_BT_ACCESS T  &lt BOOTLOADER_BT_ACCESS Y  &kp U           &kp I         &kp O          &kp P
+                &kp A          &lm LALT S    &lm LCTRL D    &lm LSHIFT F              &lm LGUI G                  &rm RGUI H                  &rm RSHIFT J    &rm RCTRL K   &rm RALT L     &kp SEMICOLON
+                &kp Z          &lm RALT X    &kp C          &lt MACOS_NAVIGATION V    &kp B                       &kp N                       &lt ARROWS M    &kp COMMA     &rm RALT DOT   &kp SLASH
+                                                            &lt MACOS_SYMBOLS ENTER   &lt NUM_AND_FKEYS ESC       &lt NUM_AND_FKEYS SPACE     &lt MACOS_SYMBOLS UNDER
+            >;
         };
 
         macsym {
-        bindings = <
-
-        &kp EXCL     &kp AT     &kp LBRC   &kp RBRC  &kp TILDE    &cpp_ptr  &kp CARET &kp MINUS  &kp SQT  &kp LG(GRAVE)
-        &kp LA(N3)   &kp DLLR   &kp LPAR   &kp RPAR  &kp PIPE     &kp LGUI  &kp EQUAL &kp UNDER  &kp DQT  &kp INS
-        &kp PRCNT    &kp HASH   &kp LBKT   &kp RBKT  &kp AMPS     &kp GRAVE &kp BSLH  &kp HOME   &kp END  &none
-
-                                            &none    &kp LBKT     &kp RBKT  &kp LG(GRAVE)
-        >;
+            bindings = <
+                &kp EXCL       &kp AT        &kp LBRC       &kp RBRC          &kp TILDE     &cpp_ptr     &kp CARET    &kp MINUS   &kp SQT      &kp LG(GRAVE)
+                &kp LA(N3)     &kp DLLR      &kp LPAR       &kp RPAR          &kp PIPE      &kp LGUI     &kp EQUAL    &kp UNDER   &kp DQT      &kp INS
+                &kp PRCNT      &kp HASH      &kp LBKT       &kp RBKT          &kp AMPS      &kp GRAVE    &kp BSLH     &kp HOME    &kp END      &none
+                                                                  &none         &kp LBKT     &kp RBKT     &kp LG(GRAVE)
+            >;
         };
 
         fkeys {
-        bindings = <
-
-        &kp F12 &kp F11      &kp F10       &kp F9         &kp LC(RIGHT)   &kp EQUAL    &kp N7        &kp N8       &kp N9      &kp STAR
-        &kp F8  &lm LALT F7  &lm LCTRL F6  &lm LSHIFT F5  &kp LGUI        &rm LGUI DOT &rm RSHIFT N4 &rm RCTRL N5 &rm RALT N6 &kp PLUS
-        &kp F4  &kp F3       &kp F2        &kp F1         &kp LC(LEFT)    &kp N0       &kp N1        &kp N2       &kp N3      &kp MINUS
-
-                                           &none          &none      &caps_word  &kp DEL
-        >;
+            bindings = <
+                &kp F12        &kp F11       &kp F10        &kp F9            &kp LC(RIGHT) &kp EQUAL    &kp N7       &kp N8      &kp N9       &kp STAR
+                &kp F8         &lm LALT F7   &lm LCTRL F6   &lm LSHIFT F5     &kp LGUI      &rm LGUI DOT &rm RSHIFT N4 &rm RCTRL N5 &rm RALT N6 &kp PLUS
+                &kp F4         &kp F3        &kp F2         &kp F1            &kp LC(LEFT)  &kp N0       &kp N1       &kp N2      &kp N3       &kp MINUS
+                                                            &none             &none         &caps_word   &kp DEL
+            >;
         };
 
         arrows {
-        bindings = <
-
-        &none     &LBR_T    &LBR_D    &LBR_P    &LBR_F    &none     &gxp_str  &none     &none     &none
-        &none     &RBR_T    &RBR_D    &RBR_P    &RBR_F    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none     
-        &none     &XTHENV   &none     &none     &none     &none     &none     &XTHENV   &none     &none
-
-                                      &kp UP    &kp DOWN  &none     &none  
-        >;
+            bindings = <
+                &none          &LBR_T        &LBR_D         &LBR_P            &LBR_F        &none        &gxp_str     &none       &none        &none
+                &none          &RBR_T        &RBR_D         &RBR_P            &RBR_F        &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT    &none
+                &none          &XTHENV       &none          &none             &none         &none        &none        &XTHENV     &none        &none
+                                                            &kp UP           &kp DOWN      &none        &none
+            >;
         };
 
         bootloader_bt_access {
-        bindings = <
-
-        &mo 5       &none     &none     &none     &none          &none       &none  &none  &none  &mo 5
-        &none       &none     &none     &none     &none          &none       &none  &none  &none  &none     
-        &bootloader &none     &none     &none     &sys_reset     &sys_reset  &none  &none  &none  &bootloader
-
-                                      &none     &none     &none     &none  
-        >;
+            bindings = <
+                &mo BLUETOOTH  &none         &none          &none             &none         &none        &none        &none       &none        &mo BLUETOOTH
+                &none          &none         &none          &none             &none         &none        &none        &none       &none        &none
+                &bootloader    &none         &none          &none             &sys_reset    &sys_reset   &none        &none       &none        &bootloader
+                                                            &none            &none         &none        &none
+            >;
         };
 
         bluetooth {
-        bindings = <
-
-        &none         &none     &none         &none         &none            &none         &none         &none         &none        &none
-        &none         &none     &none         &none         &bt BT_CLR       &bt BT_CLR    &none         &none         &none        &none     
-        &out OUT_TOG  &none     &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none        &out OUT_TOG
-
-                                      &none     &none     &none     &none  
-        >;
+            bindings = <
+                &none          &none         &none          &none             &none         &none        &none        &none       &none        &none
+                &none          &none         &none          &none             &bt BT_CLR    &bt BT_CLR   &none        &none       &none        &none
+                &out OUT_TOG   &none         &bt BT_SEL 2   &bt BT_SEL 1      &bt BT_SEL 0  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none        &out OUT_TOG
+                                                            &none             &none         &none        &none
+            >;
         };
 
         macos_navigation {
-        bindings = <
-
-        &none     &none     &none     &none     &none     &none     &none          &none          &none          &none
-        &none     &none     &none     &none     &none     &none     &kp LC(N4)     &none          &none          &none     
-        &none     &none     &none     &none     &none     &none     &kp LC(N1)     &kp LC(N2)     &kp LC(N3)     &none
-
-                                      &none     &none     &none     &none  
-        >;
+            bindings = <
+                &none          &none         &none          &none             &none         &none        &none        &none       &none        &none
+                &none          &none         &none          &none             &none         &none        &kp LC(N4)   &none       &none        &none
+                &none          &none         &none          &none             &none         &none        &kp LC(N1)   &kp LC(N2)  &kp LC(N3)   &none
+                                                            &none             &none         &none        &none
+            >;
         };
+    };
 
         // // KEEP THIS! its the blank one we can copy
         // blank {
