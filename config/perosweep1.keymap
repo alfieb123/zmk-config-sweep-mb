@@ -194,19 +194,19 @@
 
         macos {
             bindings = <
-                &kp Q          &kp W         &kp E          &lt ARROWS R              &lt BOOTLOADER_BT_ACCESS T  &lt BOOTLOADER_BT_ACCESS Y  &kp U           &kp I         &kp O          &kp P
-                &kp A          &lm LALT S    &lm LCTRL D    &lm LSHIFT F              &lm LGUI G                  &rm RGUI H                  &rm RSHIFT J    &rm RCTRL K   &rm RALT L     &kp SEMICOLON
-                &kp Z          &lm RALT X    &kp C          &lt MACOS_NAVIGATION V    &kp B                       &kp N                       &lt ARROWS M    &kp COMMA     &rm RALT DOT   &kp SLASH
-                                                            &lt MACOS_SYMBOLS ENTER   &lt NUM_AND_FKEYS ESC       &lt NUM_AND_FKEYS SPACE     &lt MACOS_SYMBOLS UNDER
+                &lt BOOTLOADER_BT_ACCESS Q   &kp W         &kp E          &lt ARROWS R              &kp T                       &kp Y                       &kp U           &kp I         &kp O          &lt BOOTLOADER_BT_ACCESS P
+                &kp A                        &lm LALT S    &lm LCTRL D    &lm LSHIFT F              &lm LGUI G                  &rm RGUI H                  &rm RSHIFT J    &rm RCTRL K   &rm RALT L     &kp SEMICOLON
+                &kp Z                        &lm RALT X    &kp C          &kp V                     &kp B                       &kp N                       &lt ARROWS M    &kp COMMA     &rm RALT DOT   &kp SLASH
+                                                                          &lt MACOS_SYMBOLS ENTER   &lt NUM_AND_FKEYS ESC       &lt NUM_AND_FKEYS SPACE     &lt MACOS_SYMBOLS UNDER
             >;
         };
 
-        macsym { // note, for # we need to use right alt so we can use the same in linux
+        macsym { 
             bindings = <
                 &kp EXCL       &kp AT        &kp LBRC       &kp RBRC          &kp TILDE     &cpp_ptr     &kp CARET    &kp MINUS   &kp SQT      &kp LG(GRAVE)
                 &kp LA(N3)     &kp DLLR      &kp LPAR       &kp RPAR          &kp PIPE      &kp LGUI     &kp EQUAL    &kp UNDER   &kp DQT      &kp INS
                 &kp PRCNT      &kp HASH      &kp LBKT       &kp RBKT          &kp AMPS      &kp GRAVE    &kp BSLH     &kp HOME    &kp END      &none
-                                                                  &none         &kp LBKT     &kp RBKT     &kp LG(GRAVE)
+                                                            &none             &kp LBKT      &kp RBKT     &kp LG(GRAVE)
             >;
         };
 
@@ -221,10 +221,10 @@
 
         arrows {
             bindings = <
-                &none          &LBR_T        &LBR_D         &LBR_P            &LBR_F        &none        &gxp_str     &none       &none        &none
+                &none          &LBR_T        &LBR_D         &LBR_P            &LBR_F        &none        &none        &none       &none        &none
                 &none          &RBR_T        &RBR_D         &RBR_P            &RBR_F        &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT    &none
                 &none          &XTHENV       &none          &none             &none         &none        &none        &XTHENV     &none        &none
-                                                            &kp UP           &kp DOWN      &none        &none
+                                                            &kp UP            &kp DOWN      &none        &none
             >;
         };
 
@@ -233,7 +233,7 @@
                 &mo BLUETOOTH  &none         &none          &none             &none         &none        &none        &none       &none        &mo BLUETOOTH
                 &none          &none         &none          &none             &none         &none        &none        &none       &none        &none
                 &bootloader    &none         &none          &none             &sys_reset    &sys_reset   &none        &none       &none        &bootloader
-                                                            &none            &none         &none        &none
+                                                            &none             &none         &none        &none
             >;
         };
 
